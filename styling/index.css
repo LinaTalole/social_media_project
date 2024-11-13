@@ -1,0 +1,97 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and background styles */
+body {
+    background-color: #AEE0FF; /* Light Blue background color */
+    color: #333;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Header styles */
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #004658; /* Darker shade to match your theme color */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Links style */
+a {
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effects for links */
+a:hover {
+    background-color: #004658; /* Matching your theme color for hover */
+    transform: scale(1.05);
+}
+
+/* Hover effect for profile link */
+a[href="profile.php"]:hover {
+    background-color: #00aaff; /* Lighter blue for profile hover */
+}
+
+/* Hover effect for logout link */
+a[href="logout.php"]:hover {
+    background-color: #ff0044; /* Red for logout hover */
+}
+
+/* Responsive design: adjust layout for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    a {
+        font-size: 1.1em;
+        padding: 8px 15px;
+    }
+}
+
+/* Container for main content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Add a box shadow to the page content */
+body {
+    padding: 50px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9); /* Slight white background for content */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,104 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #f7f7f7, #e1e1e1); /* Soft gradient background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Container */
+form {
+    background: white; /* White background for the form */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Form Title */
+h2 {
+    font-size: 2.5em;
+    color: #262626; /* Dark gray for the title */
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Form Inputs */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb; /* Soft border */
+    font-size: 1em;
+    color: #262626;
+    background-color: #fafafa; /* Light gray background for inputs */
+    transition: all 0.3s ease;
+}
+
+/* Focused Input Fields */
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #0095f6; /* Instagram blue when focused */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 149, 246, 0.7); /* Blue shadow effect */
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0095f6; /* Instagram blue color */
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #0078d4; /* Darker blue on hover */
+}
+
+/* Links */
+a {
+    color: #0095f6; /* Instagram blue color */
+    text-decoration: none;
+    font-size: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    form {
+        padding: 30px;
+        width: 90%;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    input[type="text"], input[type="email"], input[type="password"] {
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 1.1em;
+    }
+}

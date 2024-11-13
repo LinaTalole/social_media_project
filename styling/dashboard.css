@@ -1,0 +1,218 @@
+/* Global Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa; /* Light gray background */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #0095f6; /* Instagram blue */
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Navbar Styles (for View Profile, Search, and Logout) */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 15px; /* Space between buttons */
+    margin-bottom: 20px;
+}
+
+.navbar button {
+    padding: 8px 15px;
+    background-color: #0095f6; /* Instagram blue */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; /* Button width will adjust to the text */
+}
+
+.navbar button:hover {
+    background-color: #0078d4; /* Darker blue */
+}
+
+/* Create New Post Form */
+form {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1em;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+form textarea:focus {
+    border-color: #0095f6; /* Instagram blue */
+    outline: none;
+}
+
+form input[type="file"] {
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #333;
+}
+
+form button {
+    padding: 12px 20px;
+    background-color: #0095f6; /* Instagram blue */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; /* Make button width fit text */
+}
+
+form button:hover {
+    background-color: #0078d4; /* Darker blue */
+}
+
+/* Post Styles */
+.post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+strong {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.post p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.post-image {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Like Button Styles */
+form button[type="submit"] {
+    background-color: #0095f6;
+    border-radius: 50px;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    width: auto; /* Match button width to text length */
+}
+
+form button[type="submit"]:hover {
+    background-color: #0078d4;
+}
+
+/* Comment Form */
+form textarea {
+    margin-bottom: 10px;
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+.comment {
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.comment strong {
+    color: #0095f6;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    .post {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .post-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-pic {
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
